@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reedhook — сайты</title>
+    <meta
+      name="description"
+      content="Reedhook делает сайты, кабинеты и ботов под задачу. Стартовые суммы и примеры работ."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=39" />
+  </head>
+  <body>
+    <a class="skip" id="skip" href="#price">К услугам</a>
+    <header class="top">
+      <div class="top-inner">
+        <a class="logo" href="#top">Reedhook</a>
+        <nav id="nav" aria-label="Разделы">
+          <a href="#price" id="nav-price">Услуги</a>
+          <a href="#work" id="nav-work">Работы</a>
+          <a href="#contact" id="nav-contact">Контакт</a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru">RU</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="nav-cta" id="nav-cta" href="#contact">Написать</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" id="eyebrow"></p>
+          <h1 id="title"></h1>
+          <p class="type-line" id="type-line"></p>
+          <p class="lede" id="lede"></p>
+          <div class="hero-actions">
+            <a class="mail" id="hero-mail" href="mailto:reedhooks0@gmail.com"></a>
+            <a class="ghost" id="hero-more" href="#work"></a>
+          </div>
+          <ul class="stats" id="stats"></ul>
+        </div>
+        <div class="reel">
+          <video src="lofi.webm" autoplay muted loop playsinline poster="bg.png"></video>
+        </div>
+      </section>
+
+      <section id="price" class="block" aria-labelledby="price-label">
+        <div class="block-head">
+          <h2 id="price-label"></h2>
+        </div>
+        <p class="note" id="price-note"></p>
+        <div class="prices" id="price-list"></div>
+        <h3 class="factors-title" id="factors-title"></h3>
+        <ul class="factors" id="factors"></ul>
+      </section>
+
+      <section id="work" class="block" aria-labelledby="work-label">
+        <div class="block-head">
+          <h2 id="work-label"></h2>
+          <div class="filters" id="filters" role="group"></div>
+        </div>
+        <p class="note" id="work-note"></p>
+        <div id="list"></div>
+      </section>
+
+      <section id="also" class="block" aria-labelledby="also-label">
+        <div class="block-head">
+          <h2 id="also-label"></h2>
+        </div>
+        <p class="note" id="also-note"></p>
+        <div id="also-list"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow" id="contact-kicker"></p>
+          <h2 id="contact-title"></h2>
+          <p id="contact-text"></p>
+        </div>
+        <a class="mail" id="contact-mail" href="mailto:reedhooks0@gmail.com">reedhooks0@gmail.com</a>
+      </section>
+    </main>
+    <script src="pixels.js?v=27"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="motion.js?v=7"></script>
+    <script src="main.js?v=11"></script>
+  </body>
+</html>
